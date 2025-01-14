@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production react-router build",
     "dev": "react-router dev",
-    "start": "cross-env NODE_ENV=production react-router-serve ./build/server/index.js",
+    "start": "npx http-server -p 5173 ./build/client/ -c-1 --proxy http://localhost:5173?",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
