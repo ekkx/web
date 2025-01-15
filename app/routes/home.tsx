@@ -12,13 +12,13 @@ export function meta() {
 
 export default function Home() {
   return (
-    <div className="grid place-items-center w-dvw h-dvh">
+    <div className="flex justify-center items-center w-dvw h-dvh">
       <img
         src="/images/bg-dark.png"
         alt=""
         className="fixed inset-y-0 w-full h-full object-cover"
       />
-      <div className="relative flex items-center">
+      <div className="relative flex items-center sm:scale-[.45] md:scale-[.55] lg:scale-[.7] xl:scale-[.78] 2xl:scale-100">
         <SideNavigation />
         <div className="grid place-items-center w-[1280px] h-[720px]">
           <Screen>
